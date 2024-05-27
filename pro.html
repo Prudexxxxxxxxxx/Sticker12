@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=Assistant
+        
+    <body>
+        let arr = ['42-24', '25-42', '25-54'];
+
+        let sum = 0;
+        
+        for (let i = 0; i < arr.length; i++) {
+            let numbers = arr[i].split('-');
+            
+            for (let j = 1; j < numbers.length; j++) {
+                let num = parseInt(numbers[j]);
+                
+                if (!isNaN(num)) {
+                    sum += num;
+                }
+            }
+        }
+        
+        console.log(sum);
+    </body>
+    </html>
